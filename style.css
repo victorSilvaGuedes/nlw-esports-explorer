@@ -108,9 +108,9 @@ section ul li:hover{
 
 /* animação */
 
-header div{
-    animation: fromTop .7s backwards;
-    animation-delay: .2s;
+header{
+    animation: fromTop .8s backwards;
+    animation-delay: 0.3s;
 }
 
 section{
@@ -143,10 +143,10 @@ section:nth-child(3){
 @keyframes fromBottom{
     from{
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateX(30px);
     }
     to{
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
