@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding-top: 32px;
+    height: calc(120px + 32px);
+}
+
+header div{
+    /* alinhar ao meio */
+    margin: auto;
+
+    width: 120px;
+
+    /* borda de 4px, sobrando 116px para a imagem */
+    padding: 4px;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+
+    /* organizar borda na imagem */
+    display: flex;
+    
+    transition: transform .3s;
+}
+
+header div:hover{
+    transform: scale(1.3);
+}
+
+header div img{
+    /* está usando 100% da div que tem tamanho 120px */
+    width: 100%;
+    border-radius: 50%;
+}
+
+body{
+    background-image: url(./assets/bg.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+    font-family: 'Inter', sans-serif;
+    line-height: 160%;
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 44px;
+    display: grid;
+    gap: 24px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+section{
+    color: white;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section h2{
+    letter-spacing: -0.47px;
+}
+
+section p{
+    letter-spacing: -0.18px;
+    color: #A1A1AA;
+}
+
+section div{
+    background-color: #2A2634;
+    padding: 32px;
+    padding-top: 24px;
+    border-radius: 8px;  
+}
+
+section ul li{
+    transition: transform .3s;
+}
+
+section ul li:hover{
+    transform: scale(1.2);
+}
+
+.games-list img{
+    border-radius: 8px;
+    width: 90px;
+}
+
+.channel-list img{
+    border: 1px solid #443E54;
+    border-radius: 50%;
+    width: 70px;
+}
+
+/* animação */
+
+header div{
+    animation: fromTop .7s backwards;
+    animation-delay: .2s;
+}
+
+section{
+    animation: fromBottom .7s backwards;
+}
+
+section:nth-child(1){
+    animation-delay: 0;
+}
+
+section:nth-child(2){
+    animation-delay: .4s;
+}
+
+section:nth-child(3){
+    animation-delay: .8s;
+}
+
+@keyframes fromTop{
+    from{
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
