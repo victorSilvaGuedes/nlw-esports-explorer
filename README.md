@@ -6,7 +6,7 @@
 
 Projeto criado no evento Next Level Week da Rocketseat.
 
-[Clique aqui para acessar!](https://victorguedess.github.io/nlw-esports-explorer/)
+[Clique aqui para acessar!](https://victorsilvaguedes.github.io/nlw-esports-explorer/)
 
 ## ⚙ Tecnologias
 
